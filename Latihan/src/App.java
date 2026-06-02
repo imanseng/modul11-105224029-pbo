@@ -15,5 +15,13 @@ public class App {
         } catch (KopiHabisException e) {
             System.out.println(e.getMessage());
         }
+
+        // Soal no 4
+        try {
+            MesinKasir m1 = new MesinKasir();
+            m1.bayar(50000, 30000);
+        } catch (UangKurangException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
