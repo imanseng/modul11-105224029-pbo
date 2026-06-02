@@ -7,5 +7,13 @@ public class App {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+
+        // Soal no 3 (Cek ketersediaan kopi)
+        try {
+            Pelanggan p2 = new Pelanggan();
+            p2.pesanKopi(10);
+        } catch (KopiHabisException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
