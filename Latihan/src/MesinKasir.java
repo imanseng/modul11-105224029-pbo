@@ -5,4 +5,11 @@ public class MesinKasir {
             throw new UangKurangException("Uang diberikan kurang!");
         }
     }
+
+    // SOal 5
+    public void cetakStruk(boolean statusPrinter) throws Exception {
+        if (statusPrinter == false) {
+            throw new Exception("Printer error: Kertas struk habis!");
+        }
+    }
 }

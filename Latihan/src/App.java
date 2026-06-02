@@ -23,5 +23,15 @@ public class App {
         } catch (UangKurangException e) {
             System.out.println(e.getMessage());
         }
+
+        // SOal no 5
+        try {
+            MesinKasir m2 = new MesinKasir();
+            m2.cetakStruk(false);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("Terima kasih telah berkunjung ke Cafe Java Bean. Program kasir ditutup.");
+        }
     }
 }
